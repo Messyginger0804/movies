@@ -1,5 +1,6 @@
 package app.braylees.movies;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -12,5 +13,9 @@ public class MovieService {
     private MovieRepository repository;
     public List<Movie> allMovies(){
         return repository.findAll();
+    }
+
+    public Optional<Movie> oneMovie(String imdbId) {
+        return repository.findById(imdbId);
     }
 }
