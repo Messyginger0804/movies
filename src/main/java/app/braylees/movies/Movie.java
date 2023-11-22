@@ -1,6 +1,5 @@
 package app.braylees.movies;
 
-import app.braylees.movies.Review;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,8 +12,8 @@ import java.util.List;
 
 @Document(collection = "movies")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Movie {
     @Id
     private ObjectId id;
@@ -23,9 +22,9 @@ public class Movie {
     private String releaseDate;
     private String trailerLink;
     private String poster;
-    private List<String> genres;
     private List<String> backdrops;
+    private List<String> genres;
 
     @DocumentReference
-    private List<Review> reviewIds;
+    private List<Review> reviews;
 }
