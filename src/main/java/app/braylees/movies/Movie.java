@@ -27,4 +27,6 @@ public class Movie {
 
     @DocumentReference
     private List<Review> reviews;
+    private String brayleeReview;
+    private String rubyReview;
 }

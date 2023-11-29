@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/v1/movies")
 public class MovieController {
-
     @Autowired
     private MovieService service;
     @GetMapping
