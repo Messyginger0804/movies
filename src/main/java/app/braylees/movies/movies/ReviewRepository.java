@@ -1,4 +1,4 @@
-package app.braylees.movies;
+package app.braylees.movies.movies;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;

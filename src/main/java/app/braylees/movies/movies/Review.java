@@ -1,4 +1,4 @@
-package app.braylees.movies;
+package app.braylees.movies.movies;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package app.braylees.movies;
+package app.braylees.movies.movies;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,4 +29,14 @@ public class Movie {
     private List<Review> reviews;
     private String brayleeReview;
     private String rubyReview;
+
+    public Movie(String imdbId, String title, String releaseDate, String trailerLink, String poster, List<String> backdrops, List<String> genres) {
+        this.imdbId = imdbId;
+        this.title = title;
+        this.releaseDate = releaseDate;
+        this.trailerLink = trailerLink;
+        this.poster = poster;
+        this.backdrops = backdrops;
+        this.genres = genres;
+    }
 }
