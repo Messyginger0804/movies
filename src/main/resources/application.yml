@@ -1,0 +1,6 @@
+spring:
+    data:
+      mongodb:
+        database: movie-api-db
+        host: movies-api
+        port: 27017
