@@ -13,4 +13,4 @@ COPY --from=build /target/movies-0.0.1-SNAPSHOT.jar movies.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "movies_jar"]
+ENTRYPOINT ["java", "-jar", "movies.jar"]
