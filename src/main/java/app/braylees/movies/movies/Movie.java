@@ -39,4 +39,5 @@ public class Movie {
         this.backdrops = backdrops;
         this.genres = genres;
     }
+
 }
